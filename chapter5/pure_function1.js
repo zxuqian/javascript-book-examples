@@ -6,7 +6,7 @@ function update(data) {
 const data = { id: 1 };
 update(data);
 
-// 网络请求，有可能出错，有可能数据变量
+// 网络请求，有可能出错，也有可能后端数据变化
 async function getData() {
   const res = await fetch("http://test.com/api");
   return await res.json();
