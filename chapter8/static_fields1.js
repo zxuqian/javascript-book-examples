@@ -2,7 +2,7 @@ class Page {
   static viewCount = 0;
 
   static increase() {
-    Page.viewCount++;
+    this.viewCount++; // 或 Page.viewCount++;
   }
 }
 
