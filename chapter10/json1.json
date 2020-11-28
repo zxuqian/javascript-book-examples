@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "博客标题",
+  "isPublished": true,
+  "comments": [
+    {
+      "id": 1,
+      "content": "好"
+    },
+    {
+      "id": 2,
+      "content": "赞"
+    }
+  ],
+  "author": null
+}
