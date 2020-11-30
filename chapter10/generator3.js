@@ -4,12 +4,12 @@ function* alphabetGenerator() {
   }
 }
 
-let alphabet = {
+let alphabetIterator = {
   [Symbol.iterator]: alphabetGenerator,
 };
 
-console.log([...alphabet]);
+console.log([...alphabetIterator]);
 
-for (let letter of alphabet) {
+for (let letter of alphabetIterator) {
   console.log(letter);
 }

@@ -22,11 +22,11 @@ let alphabet = {
   },
 };
 
-console.log([...alphabet]);
+console.log([...alphabetIterator]);
 
-for (let letter of alphabet) {
+for (let letter of alphabetIterator) {
   console.log(letter);
 }
 
-const [a, b, c] = alphabet;
+const [a, b, c] = alphabetIterator;
 console.log(a, b, c);

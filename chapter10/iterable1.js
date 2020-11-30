@@ -16,7 +16,7 @@ const alphabetIterator = {
   },
 };
 
-let alphabet = {
+let alphabetIterator = {
   [Symbol.iterator]() {
     return alphabetIterator;
   },
@@ -28,5 +28,5 @@ let alphabet = {
 //   console.log(letter);
 // }
 
-const [a, b, c] = alphabet;
+const [a, b, c] = alphabetIterator;
 console.log(a, b, c);

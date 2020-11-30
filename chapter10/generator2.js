@@ -4,21 +4,21 @@ function* alphabetGenerator() {
   }
 }
 
-const alphabet = alphabetGenerator();
-console.log(alphabet.next().value); // "a"
-console.log(alphabet.next().value); // "b"
-console.log(alphabet.next().value); // "c"
+const alphabetIterator = alphabetGenerator();
+console.log(alphabetIterator.next().value); // "a"
+console.log(alphabetIterator.next().value); // "b"
+console.log(alphabetIterator.next().value); // "c"
 
 console.log("for of======================");
-for (let letter of alphabet) {
+for (let letter of alphabetIterator) {
   console.log(letter);
 }
 
-alphabet[Symbol.iterator] = alphabetGenerator;
-for (let letter of alphabet) {
+alphabetIterator[Symbol.iterator] = alphabetGenerator;
+for (let letter of alphabetIterator) {
   console.log(letter); // "a" - "z"
 }
 
-for (let letter of alphabet) {
+for (let letter of alphabetIterator) {
   console.log(letter); // "a" - "z"
 }

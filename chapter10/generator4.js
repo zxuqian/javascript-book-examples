@@ -1,4 +1,4 @@
-let alphabet = {
+let alphabetIterator = {
   [Symbol.iterator]: function* () {
     for (let charCode = 97; charCode < 123; charCode++) {
       yield String.fromCharCode(charCode);
