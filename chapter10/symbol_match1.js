@@ -7,5 +7,3 @@ const mp3FilePattern = {
 let res = "song.mp3".match(mp3FilePattern);
 let res2 = "text.txt".match(mp3FilePattern);
 console.log(res, res2); // true false
-
-console.log("text.txt".search(mp3FilePattern));
