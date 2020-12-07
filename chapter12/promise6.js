@@ -1,7 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/posts")
   .then((res) => {
     const status = res.status;
-    if (status === 404 || status === 500) {
+    if (status >= 400) {
       throw status;
     }
     return res.json();
