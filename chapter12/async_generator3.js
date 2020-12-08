@@ -1,5 +1,3 @@
-async function* asyncAlphabetGen() {}
-
 const alphabet = {
   async *[Symbol.asyncIterator]() {
     for (let charCode = 97; charCode < 123; charCode++) {
