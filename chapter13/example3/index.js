@@ -23,3 +23,19 @@ import {
   Select,
   Radio,
 } from "./form/index.js";
+
+// 动态导入
+function handleClickEvent() {
+  import("./button.js").then((button) => {
+    button.default;
+    button.ButtonCircle;
+    button.ButtonRect;
+  });
+}
+
+// async function handleClickEvent() {
+//   let button = await import("./button.js");
+//   button.default;
+//   button.ButtonCircle;
+//   button.ButtonRect;
+// }
