@@ -4,5 +4,7 @@ x = "javascript"; // 把变量 x 改为 String 字符串类型
 let bool = true; // Boolean 布尔类型
 let empty = null; // Null 类型
 let nonExist = undefined; // Undfined 类型
+let arr = [1, 2, 3]; // Array 数组类型
+let obj = { a: 1, b: 2, c: 3 }; // Object 对象类型
 const unchangeable = 8; // Number 类型常量
 // unchangeable = 6; // 常量不可重新赋值
