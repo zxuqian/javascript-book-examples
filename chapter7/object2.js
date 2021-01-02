@@ -4,7 +4,7 @@ const blogPost = {
   id: 1,
   title,
   getSlug() {
-    return "/post/" + title;
+    return "/post/" + this.title;
   },
   "update-at": "2020-10-26",
 };

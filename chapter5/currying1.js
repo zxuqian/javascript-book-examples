@@ -17,5 +17,5 @@ console.log(uToC(1)); // 6.78
 console.log(uToC(8)); // 54.24
 
 const cToJ = convertRate(15.74);
-const uToJ = (amount) => uToC(cToJ(amount));
-console.log(uToJ(1));
+const uToJ = (amount) => cToJ(uToC(amount));
+console.log(uToJ(2));

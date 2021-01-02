@@ -1,10 +1,13 @@
 const user = {
-  username: "",
-  set setUsername(value) {
+  _username: "",
+  set username(value) {
     if (value.length >= 5) {
-      this.username = value;
+      this._username = value;
     }
   },
+  get username() {
+    return this._username;
+  },
 };
-user.setUsername = "testuser";
+user.username = "testuser";
 console.log(user.username);

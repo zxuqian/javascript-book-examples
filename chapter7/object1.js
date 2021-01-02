@@ -2,7 +2,7 @@ const blogPost = {
   id: 1,
   title: "JavaScript 教程",
   getSlug: function () {
-    return "/post/" + title;
+    return "/post/" + this.title;
   },
   "update-at": "2020-10-26",
 };

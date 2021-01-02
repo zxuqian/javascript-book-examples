@@ -2,7 +2,7 @@ const blogPost = {
   id: 1,
   title: "JavaScript 教程",
   getSlug: function () {
-    return "/post/" + title;
+    return "/post/" + this.title;
   },
   author: "李明",
   comments: ["很好", "受教了", "加油"],
