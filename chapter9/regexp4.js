@@ -1,5 +1,7 @@
 let re = new RegExp("abc", "g");
-console.log("abcabc".match(re)); // ["abc", "abc"]
-console.log(re.lastIndex); // 0
-console.log(re.exec("abcabc")); // ["abc", index: 0, input: "abcabc", groups: undefined]
-console.log(re.lastIndex); // 3
+"abcabc".match(re); // ["abc", "abc"]
+re.lastIndex; // 0
+re.exec("abcabc"); // ["abc", index: 0, input: "abcabc", groups: undefined]
+re.lastIndex; // 3
+re.exec("abcabc"); // ["abc", index: 3, input: "abcabc", groups: undefined]
+re.lastIndex; // 6
