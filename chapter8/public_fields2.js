@@ -1,3 +1,4 @@
+// chapter8/public_fields2.js
 class Button {
   label = "按钮";
   html = `<button>${this.label}</button>`;

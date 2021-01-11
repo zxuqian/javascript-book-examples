@@ -1,3 +1,4 @@
+// chapter12/promise2.js
 const p = new Promise((resolve) => {
   console.log("in promise...");
   for (let i = 0; i < 10000000000; i++) {}

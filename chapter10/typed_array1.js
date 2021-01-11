@@ -1,3 +1,4 @@
+// chapter10/typed_array1.js
 let int16arr = new Int16Array(2);
 int16arr[0] = 236;
 int16arr[1] = 13;

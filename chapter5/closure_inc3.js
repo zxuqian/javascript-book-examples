@@ -1,3 +1,4 @@
+// chapter5/closure_inc3.js
 function increment(initialValue) {
   let result = initialValue;
   return function by(step) {

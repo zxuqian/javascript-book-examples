@@ -1,3 +1,4 @@
+// chapter7/this2.js
 function Func() {
   const init = () => {
     this.a = 5;

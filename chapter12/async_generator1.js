@@ -1,3 +1,4 @@
+// chapter12/async_generator1.js
 async function* asyncAlphabetGen() {
   for (let charCode = 97; charCode < 123; charCode++) {
     await new Promise((resolve) => setTimeout(resolve, 1000));

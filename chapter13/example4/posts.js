@@ -1,3 +1,4 @@
+// chapter13/example4/posts.js
 const posts = [
   { id: 1, title: "标题 1", content: "内容 1" },
   { id: 2, title: "标题 2", content: "内容 2" },

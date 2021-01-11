@@ -1,3 +1,4 @@
+// chapter12/promise3.js
 new Promise((resolve) => {
   setTimeout(() => {
     resolve(5);

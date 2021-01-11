@@ -1,3 +1,4 @@
+// chapter7/bind3.js
 function curry(func) {
   return function _curry(...args) {
     if (args.length >= func.length) {

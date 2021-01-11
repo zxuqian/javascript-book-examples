@@ -1,3 +1,4 @@
+// chapter7/getters_setters2.js
 const user = {
   _username: "",
   set username(value) {

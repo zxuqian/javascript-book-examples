@@ -1,3 +1,4 @@
+// chapter10/proxy2.js
 let config = { env: "dev" };
 config = new Proxy(config, {
   get(target, propName) {

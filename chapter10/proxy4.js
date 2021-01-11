@@ -1,3 +1,4 @@
+// chapter10/proxy4.js
 let user = { username: "user", password: 123456 };
 user = new Proxy(user, {
   deleteProperty() {

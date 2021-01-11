@@ -1,3 +1,4 @@
+// chapter8/methods2.js
 class Employee {
   constructor(name, dept) {
     this.name = name;

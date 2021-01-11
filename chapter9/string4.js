@@ -1,3 +1,4 @@
+// chapter9/string4.js
 let tags = "前端, JavaScript, React, Vue, Angular";
 console.log(tags.split(", ")); // [ '前端', 'JavaScript', 'React', 'Vue', 'Angular' ]
 console.log(tags.split(", ", 2)); // [ '前端', 'JavaScript' ]

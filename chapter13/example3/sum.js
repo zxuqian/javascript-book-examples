@@ -1,8 +1,10 @@
-function add(a, b) {
+// chapter13/example3/sum.js
+
+function sum(a, b) {
   return a + b;
 }
 
-export default add;
+export default sum;
 
 // export default function (a, b) {
 //   return a + b;

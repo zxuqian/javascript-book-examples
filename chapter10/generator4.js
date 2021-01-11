@@ -1,3 +1,4 @@
+// chapter10/generator4.js
 let alphabetIterator = {
   [Symbol.iterator]: function* () {
     for (let charCode = 97; charCode < 123; charCode++) {

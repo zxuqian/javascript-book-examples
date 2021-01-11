@@ -1,3 +1,4 @@
+// chapter7/seal1.js
 const obj = { a: 1 };
 Object.seal(obj);
 console.log(Object.isSealed(obj)); // true

@@ -1,3 +1,4 @@
+// chapter7/constructor2.js
 function Message(message, sender) {
   this.message = message;
   this.sender = sender;

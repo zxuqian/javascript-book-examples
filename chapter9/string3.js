@@ -1,3 +1,4 @@
+// chapter9/string3.js
 let str = "hello world";
 let search = "o";
 let result = [];
@@ -7,4 +8,4 @@ while (index > -1) {
   index = str.indexOf(search, index + 1);
 }
 
-console.log(result);
+console.log(result); // [ 4, 7 ]

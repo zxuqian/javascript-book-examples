@@ -1,3 +1,4 @@
+// chapter13/module1.js
 const slider = (function () {
   let _data = [];
   let current = 0;

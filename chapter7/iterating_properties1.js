@@ -1,3 +1,4 @@
+// chapter7/iterating_properties1.js
 const blogPost = {
   id: 1,
   title: "JavaScript 教程",

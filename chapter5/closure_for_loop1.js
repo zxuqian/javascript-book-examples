@@ -1,3 +1,4 @@
+// chapter5/cloures_for_loop1.js
 for (var i = 0; i < 3; i++) {
   setTimeout(() => {
     console.log(i);

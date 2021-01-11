@@ -1,3 +1,4 @@
+// chapter10/symbol_species1.js
 class CustomArray extends Array {
   static get [Symbol.species]() {
     return Array;

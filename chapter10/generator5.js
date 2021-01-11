@@ -1,3 +1,4 @@
+// chapter10/generator5.js
 function* alphabetGenerator() {
   for (let charCode = 97; charCode < 123; charCode++) {
     yield String.fromCharCode(charCode);

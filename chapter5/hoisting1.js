@@ -1,3 +1,4 @@
+// chapter5/hoisting1.js
 function func() {
   return x;
   x = 5;

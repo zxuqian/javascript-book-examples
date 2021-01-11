@@ -1,3 +1,4 @@
+// chapter12/async_generator4.js
 // 需要在浏览器中执行
 async function* fetchPosts() {
   let page = 1;

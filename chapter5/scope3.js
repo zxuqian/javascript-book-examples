@@ -1,3 +1,4 @@
+// chapter5/scope3.js
 {
   let i = 10;
 }

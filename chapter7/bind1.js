@@ -1,3 +1,4 @@
+// chapter7/bind1.js
 const obj = {
   a: 1,
   f(b) {
@@ -6,6 +7,6 @@ const obj = {
 };
 
 const f = obj.f;
-console.log(f(10));
+console.log(f(10)); // NaN
 const boundF = f.bind(obj);
-console.log(boundF(10));
+console.log(boundF(10)); // 11

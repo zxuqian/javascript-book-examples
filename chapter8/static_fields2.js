@@ -1,3 +1,4 @@
+// chapter8/static_fields2.js
 class Page {
   static viewCount = 0;
 

@@ -1,3 +1,4 @@
+// chapter11/exception6.js
 function getConnection() {
   let conn = null;
   try {

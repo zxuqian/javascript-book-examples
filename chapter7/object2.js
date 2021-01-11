@@ -1,3 +1,4 @@
+// chapter7/object2.js
 const title = getUserInput();
 
 const blogPost = {

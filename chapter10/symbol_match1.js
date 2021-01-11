@@ -1,3 +1,4 @@
+// chapter10/symbol_match1.js
 const mp3FilePattern = {
   [Symbol.match](str) {
     return str.endsWith(".mp3");

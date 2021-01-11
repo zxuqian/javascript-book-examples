@@ -1,3 +1,4 @@
+// chapter9/string2.js
 let str = "这是一个字符串";
 console.log(str.slice(1, 4)); // 正常情况
 console.log(str.slice(4, 1)); // 结束索引大于起始索引

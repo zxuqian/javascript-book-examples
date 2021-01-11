@@ -1,3 +1,4 @@
+// chapter12/promise_all2.js
 const promise1 = new Promise((resolve, reject) =>
   setTimeout(reject, 300, "失败")
 );

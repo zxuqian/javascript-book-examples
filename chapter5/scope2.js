@@ -1,3 +1,4 @@
+// chapter5/scope2.js
 let x = 5;
 function outerFunc() {
   let x = 4;

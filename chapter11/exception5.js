@@ -1,3 +1,4 @@
+// chapter11/exception5.js
 try {
   console.log("获取数据库连接对象");
   throw "出现错误";

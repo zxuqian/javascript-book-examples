@@ -1,3 +1,4 @@
+// chapter7/descriptor1.js
 const obj = {};
 Object.defineProperty(obj, "a", {
   value: 1,

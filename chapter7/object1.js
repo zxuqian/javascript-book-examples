@@ -1,3 +1,4 @@
+// chapter7/object1.js
 const blogPost = {
   id: 1,
   title: "JavaScript 教程",

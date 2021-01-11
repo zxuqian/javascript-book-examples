@@ -1,3 +1,4 @@
+// chapter7/descriptor3.js
 const obj = {};
 Object.defineProperty(obj, "a", {
   configurable: false,

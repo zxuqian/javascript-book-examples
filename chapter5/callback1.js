@@ -1,4 +1,5 @@
 /**
+ * // chapter5/callback1.js
  * @param {object} user 用户数据
  * @param {(success: boolean) => void} callback
  */

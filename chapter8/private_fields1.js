@@ -1,3 +1,4 @@
+// chapter8/private_fields1.js
 class Button {
   label = "按钮";
   #html = this.#generateHtml("button"); // 使用私有成员方法生成 html

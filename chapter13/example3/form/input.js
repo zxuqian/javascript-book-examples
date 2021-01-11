@@ -1,3 +1,4 @@
+// chapter13/example3/form/input.js
 export function InputPwd() {
   return "密码输入框";
 }

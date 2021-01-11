@@ -1,3 +1,4 @@
+// chapter5/varargs1.js
 function joinStrings(seperator) {
   let result = "";
   for (let i = 1; i < arguments.length; i++) {

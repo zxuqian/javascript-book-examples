@@ -1,3 +1,4 @@
+// chapter10/map1.js
 let map = new Map();
 map.set("a", 1); // key 为字符串
 map.set(() => {}, true); // key 为函数

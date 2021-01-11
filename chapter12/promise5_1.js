@@ -1,3 +1,4 @@
+// chapter12/promise5_1.js
 new Promise((resolve, reject) => {
   setTimeout(() => {
     try {

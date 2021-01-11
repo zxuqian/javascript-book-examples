@@ -1,3 +1,4 @@
+// chapter12/async3.js
 // 需要在浏览器中执行
 async function getPosts() {
   try {

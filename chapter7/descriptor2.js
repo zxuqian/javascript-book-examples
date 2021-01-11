@@ -1,3 +1,4 @@
+// chapter7/descriptor2.js
 const counter = {
   count: 1,
 };

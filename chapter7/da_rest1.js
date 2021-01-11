@@ -1,3 +1,4 @@
+// chapter7/da_rest1.js
 const post = {
   id: 1,
   title: "如何学好 JavaScript",

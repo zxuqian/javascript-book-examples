@@ -1,3 +1,4 @@
+// chapter4/switch_case1.js
 let a = 10;
 switch (a) {
   case 5:

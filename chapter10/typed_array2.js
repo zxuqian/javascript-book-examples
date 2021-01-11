@@ -1,3 +1,4 @@
+// chapter10/typed_array2.js
 let buffer = new ArrayBuffer(4);
 let dataView = new DataView(buffer);
 

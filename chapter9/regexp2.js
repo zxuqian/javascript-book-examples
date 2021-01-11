@@ -1,3 +1,4 @@
+// chapter9/regexp2.js
 let re = new RegExp("abc", "g");
 re.lastIndex; // 0
 console.log(re.test("abcabc")); // true

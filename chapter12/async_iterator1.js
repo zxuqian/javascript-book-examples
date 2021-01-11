@@ -1,3 +1,4 @@
+// chapter12/async_iterator1.js
 const alphabet = {
   [Symbol.asyncIterator]() {
     return {

@@ -1,3 +1,4 @@
+// chapter10/json2.js
 function replacer(key, value) {
   if (typeof value === "number") {
     return undefined;

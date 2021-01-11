@@ -1,3 +1,4 @@
+// chapter10/iterator1.js
 const alphabetIterator = {
   charCode: 97,
   next() {

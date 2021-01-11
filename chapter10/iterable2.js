@@ -1,3 +1,4 @@
+// chatper10/iterable2.js
 const alphabetIterator = {
   charCode: 97,
   next() {

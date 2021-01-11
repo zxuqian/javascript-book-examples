@@ -1,3 +1,4 @@
+// chapter5/closure_inc1.js
 function increment(initialValue, step) {
   return initialValue + step;
 }

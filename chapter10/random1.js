@@ -1,3 +1,4 @@
+// chapter10/random1.js
 function generateRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);

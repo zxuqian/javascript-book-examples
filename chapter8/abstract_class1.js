@@ -1,3 +1,4 @@
+// chapter8/abstract_class1.js
 class AbstractShape {
   constructor() {
     if (new.target === AbstractShape) {

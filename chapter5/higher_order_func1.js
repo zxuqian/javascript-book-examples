@@ -1,3 +1,4 @@
+// chapter5/higher_order_func1.js
 function square(f) {
   return (...args) => f(...args) ** 2;
 }

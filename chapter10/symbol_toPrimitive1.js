@@ -1,3 +1,4 @@
+// chapter10/symbol_toPrimitive1.js
 let obj = {
   [Symbol.toPrimitive](t) {
     if (t === "number") return 10;

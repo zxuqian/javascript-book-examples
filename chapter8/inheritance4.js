@@ -1,3 +1,4 @@
+// chapter8/inheritance4.js
 class Employee {
   constructor(name, dept) {
     this.name = name;

@@ -1,3 +1,4 @@
+// chapter5/currying1.js
 function usdToCny(amount, rate) {
   return amount * rate;
 }

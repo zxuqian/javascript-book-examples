@@ -1,3 +1,4 @@
+// chapter10/generator9.js
 function* gf1() {
   yield 1;
   yield* gf2();

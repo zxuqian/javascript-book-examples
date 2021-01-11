@@ -1,3 +1,4 @@
+// chapter11/exception7.js
 function division(a, b) {
   if (typeof a !== "number") throw new TypeError("a 必须为数字");
   if (typeof b !== "number") throw new TypeError("b 必须为数字");

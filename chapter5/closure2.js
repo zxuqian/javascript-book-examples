@@ -1,16 +1,27 @@
-function increment(initialValue) {
-  let result = initialValue;
-  return function by(step) {
-    result += step;
-    return result;
+// chapter5/closure2.js
+const myData = function data() {
+  let arr = [1, 3, 5, 7, 9];
+  let index = 0;
+  return {
+    value() {
+      return arr[index];
+    },
+    next() {
+      index = ++index % arr.length;
+    },
+    pre() {
+      index = (--index + arr.length) % arr.length;
+    },
   };
-}
+};
 
-const incFiveBy = increment(5);
-console.log(incFiveBy(2)); // 7
-console.log(incFiveBy(4)); // 11
+// const myData = data();
+console.log(myData.value());
+myData.next();
+myData.next();
+console.log(myData.value());
 
-const incTenBy = increment(10);
-console.log(incTenBy(3)); // 13
-console.log(incTenBy(5)); // 18
-console.log(incFiveBy(1)); // 12
+myData.pre();
+myData.pre();
+myData.pre();
+console.log(myData.value());

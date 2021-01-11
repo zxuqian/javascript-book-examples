@@ -1,3 +1,4 @@
+// chapter10/proxy1.js
 let obj = { a: 1, b: 2 };
 let proxy = new Proxy(obj, {});
 console.log(proxy); // { a: 1, b: 2 }

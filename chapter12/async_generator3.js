@@ -1,3 +1,4 @@
+// chapter12/async_generator3.js
 const alphabet = {
   async *[Symbol.asyncIterator]() {
     for (let charCode = 97; charCode < 123; charCode++) {

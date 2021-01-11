@@ -1,3 +1,4 @@
+// chapter10/generator8.js
 function* alphabetGenerator() {
   let step = 1;
   for (let charCode = 97; charCode < 123; charCode += step) {

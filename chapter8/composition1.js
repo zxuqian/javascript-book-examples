@@ -1,3 +1,4 @@
+// chapter8/composition1.js
 class Department {
   constructor(name, manager) {
     this.name = name;

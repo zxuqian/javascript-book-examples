@@ -1,3 +1,4 @@
+// chapter12/promise6.js
 fetch("https://jsonplaceholder.typicode.com/posts")
   .then((res) => {
     const status = res.status;

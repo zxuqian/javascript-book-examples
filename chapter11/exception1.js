@@ -1,3 +1,4 @@
+// chapter11/exception1.js
 try {
   let obj = undefined;
   obj.method();

@@ -1,3 +1,4 @@
+// chapter10/generator1.js
 function* generatorFunc() {
   yield 1;
   yield 2;

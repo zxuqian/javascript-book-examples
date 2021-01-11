@@ -1,3 +1,4 @@
+// chapter8/public_fields1.js
 class Button {
   label = "按钮";
 }

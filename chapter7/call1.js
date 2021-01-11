@@ -1,3 +1,4 @@
+// chapter7/call1.js
 function sum(prop1, prop2) {
   return this[prop1] + this[prop2];
 }

@@ -1,3 +1,4 @@
+// chapter11/exception4.js
 class ValidationError extends Error {
   constructor(message, input) {
     super(message + "，用户输入：" + input);

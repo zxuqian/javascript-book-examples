@@ -1,3 +1,4 @@
+// chapter10/proxy5.js
 let findTwo = (x) => x === 2;
 findTwo = new Proxy(findTwo, {
   apply(target, thisArg, args) {
