@@ -5,5 +5,5 @@ const blogPost = {
   getSlug: function () {
     return "/post/" + this.title;
   },
-  "update-at": "2020-10-26",
+  "updated-at": "2020-10-26",
 };
