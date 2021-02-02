@@ -18,7 +18,7 @@ class Employee {
   }
   set info(value) {
     this.name = value.name;
-    this.dept = value.name;
+    this.dept = value.dept;
   }
 }
 
