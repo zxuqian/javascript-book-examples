@@ -4,12 +4,10 @@ import User from "./User.js";
 const store = new Store();
 store.init();
 
-const clothesList = store.list;
-
 console.log("===========================================");
 console.log("本店所有衣服列表：");
 console.log("===========================================");
-store.displayAllClothese();
+store.displayAllClothes();
 
 const user = new User({
   username: "test",
@@ -18,9 +16,9 @@ const user = new User({
 });
 
 const myCart = user.getCurrentCart();
-myCart.addToCart(clothesList[0]);
-myCart.addToCart(clothesList[0]);
-myCart.addToCart(clothesList[2]);
+myCart.addToCart(store.selectClothes(0));
+myCart.addToCart(store.selectClothes(0));
+myCart.addToCart(store.selectClothes(2));
 
 console.log("\n===========================================");
 console.log("购物车内容：");

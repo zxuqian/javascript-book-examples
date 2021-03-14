@@ -13,8 +13,6 @@ class Cart {
     }
   }
 
-  removeFromCart(id) {}
-
   displayCartContent() {
     console.table(
       [...this.#items.values()].map((item) => ({
@@ -40,7 +38,7 @@ class Cart {
       address,
       user,
     });
-    store.orders.push(newOrder);
+    store.addNewOrder(newOrder);
   }
 }
 

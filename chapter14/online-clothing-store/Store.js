@@ -3,8 +3,8 @@ import TShirt from "./TShirt.js";
 import Jeans from "./Jeans.js";
 import { generateId } from "./utils.js";
 class Store {
-  list = [];
-  orders = [];
+  #list = [];
+  #orders = [];
 
   init() {
     const tshirt1 = new TShirt({
@@ -50,17 +50,17 @@ class Store {
       waist: 79,
       inseam: 101,
     });
-    this.addToList(tshirt1, tshirt2, jeans1, jeans2);
+    this.#addToList(tshirt1, tshirt2, jeans1, jeans2);
   }
 
-  addToList(...clothes) {
-    this.list.push(...clothes);
+  #addToList(...clothes) {
+    this.#list.push(...clothes);
   }
 
-  displayAllClothese() {
+  displayAllClothes() {
     const tshirts = [];
     const jeans = [];
-    this.list.forEach((clothes) => {
+    this.#list.forEach((clothes) => {
       if (clothes instanceof TShirt) {
         tshirts.push(clothes);
       } else if (clothes instanceof Jeans) {
@@ -73,29 +73,18 @@ class Store {
     console.table(jeans);
   }
 
-  displayAllOrders() {
-    this.orders.forEach((order) => {
-      console.log(`id：\t\t${order.id},
-商品：\t\t${this.#getOrderItemsDesc(order.items).join("\n\t\t")}
-配送地址：\t${order.address.fullAddress}
-收货人： \t${order.address.name}
-电话：  \t${order.address.mobilePhone}
+  selectClothes(index) {
+    return this.#list[index];
+  }
 
-总价：\t\t￥${order.totalPrice}
-      `);
+  displayAllOrders() {
+    this.#orders.forEach((order) => {
+      order.displayOrder();
     });
   }
 
-  #getOrderItemsDesc(orderItems) {
-    return orderItems.map(
-      (orderItem) =>
-        `名称：${orderItem.item.name}\t尺码：${orderItem.item.size}\t数量：${orderItem.count}`
-    );
-  }
-
-  getByPage(pageNumber, pageSize) {
-    const start = (pageNumber - 1) * pageSize;
-    return this.list.slice(start, start + pageSize);
+  addNewOrder(order) {
+    this.#orders.push(order);
   }
 }
 
