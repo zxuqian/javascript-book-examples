@@ -77,14 +77,14 @@ class Store {
     return this.#list[index];
   }
 
+  addNewOrder(order) {
+    this.#orders.push(order);
+  }
+
   displayAllOrders() {
     this.#orders.forEach((order) => {
       order.displayOrder();
     });
-  }
-
-  addNewOrder(order) {
-    this.#orders.push(order);
   }
 }
 
