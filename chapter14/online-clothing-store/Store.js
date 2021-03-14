@@ -1,0 +1,102 @@
+import Cart from "./Cart.js";
+import TShirt from "./TShirt.js";
+import Jeans from "./Jeans.js";
+import { generateId } from "./utils.js";
+class Store {
+  list = [];
+  orders = [];
+
+  init() {
+    const tshirt1 = new TShirt({
+      id: generateId(),
+      name: "纯棉宽松 T 恤",
+      price: 99.0,
+      color: "黑色",
+      size: "XL",
+      material: "纯棉",
+      chest: 116,
+      sleeve: 30,
+    });
+
+    const tshirt2 = new TShirt({
+      id: generateId(),
+      name: "纯棉修身 T 恤",
+      price: 89.0,
+      color: "白色",
+      size: "L",
+      material: "涤纶",
+      chest: 112,
+      sleeve: 28,
+    });
+
+    const jeans1 = new Jeans({
+      id: generateId(),
+      name: "水洗牛仔裤",
+      price: 129.0,
+      color: "蓝色",
+      size: "30",
+      material: "纯棉",
+      waist: 77,
+      inseam: 99,
+    });
+
+    const jeans2 = new Jeans({
+      id: generateId(),
+      name: "修身牛仔裤",
+      price: 159.0,
+      color: "黑色",
+      size: "31",
+      material: "纯棉",
+      waist: 79,
+      inseam: 101,
+    });
+    this.addToList(tshirt1, tshirt2, jeans1, jeans2);
+  }
+
+  addToList(...clothes) {
+    this.list.push(...clothes);
+  }
+
+  displayAllClothese() {
+    const tshirts = [];
+    const jeans = [];
+    this.list.forEach((clothes) => {
+      if (clothes instanceof TShirt) {
+        tshirts.push(clothes);
+      } else if (clothes instanceof Jeans) {
+        jeans.push(clothes);
+      }
+    });
+    console.log("上装");
+    console.table(tshirts);
+    console.log("下装");
+    console.table(jeans);
+  }
+
+  displayAllOrders() {
+    this.orders.forEach((order) => {
+      console.log(`id：\t\t${order.id},
+商品：\t\t${this.#getOrderItemsDesc(order.items).join("\n\t\t")}
+配送地址：\t${order.address.fullAddress}
+收货人： \t${order.address.name}
+电话：  \t${order.address.mobilePhone}
+
+总价：\t\t￥${order.totalPrice}
+      `);
+    });
+  }
+
+  #getOrderItemsDesc(orderItems) {
+    return orderItems.map(
+      (orderItem) =>
+        `名称：${orderItem.item.name}\t尺码：${orderItem.item.size}\t数量：${orderItem.count}`
+    );
+  }
+
+  getByPage(pageNumber, pageSize) {
+    const start = (pageNumber - 1) * pageSize;
+    return this.list.slice(start, start + pageSize);
+  }
+}
+
+export default Store;
