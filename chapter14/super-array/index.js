@@ -1,0 +1,10 @@
+export { default as unique } from "./src/unique.js";
+export { default as intersection } from "./src/intersection.js";
+export { default as union } from "./src/union.js";
+export { default as difference } from "./src/difference.js";
+export { default as difference_symm } from "./src/difference_symm.js";
+export { default as mean } from "./src/mean.js";
+export { default as sum } from "./src/sum.js";
+export { default as range } from "./src/range.js";
+export { default as split } from "./src/split.js";
+export { default as count_values } from "./src/count_values.js";
