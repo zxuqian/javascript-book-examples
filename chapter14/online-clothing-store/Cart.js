@@ -1,5 +1,4 @@
 import Order from "./Order.js";
-import Store from "./Store.js";
 import { generateId } from "./utils.js";
 
 class Cart {

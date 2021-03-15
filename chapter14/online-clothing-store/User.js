@@ -4,19 +4,23 @@ import Store from "./Store.js";
 import { generateId } from "./utils.js";
 class User {
   #cart = new Cart();
+  #shippingAddresses = [];
   constructor({ username = "", password = "", mobilePhone = "" }) {
     this.username = username;
     this.password = password;
     this.mobilePhone = mobilePhone;
-    this.shippingAddresses = [];
   }
 
   getCurrentCart() {
     return this.#cart;
   }
 
+  getShippedAddresses() {
+    return this.#shippingAddresses;
+  }
+
   addShippingAddress({ name, province, city, address, mobilePhone }) {
-    this.shippingAddresses.push(
+    this.#shippingAddresses.push(
       new Address({
         id: generateId(),
         name,
