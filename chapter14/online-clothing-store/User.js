@@ -15,7 +15,7 @@ class User {
     return this.#cart;
   }
 
-  getShippedAddresses() {
+  getShippingAddresses() {
     return this.#shippingAddresses;
   }
 

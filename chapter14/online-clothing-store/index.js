@@ -36,7 +36,7 @@ user.addShippingAddress({
   mobilePhone: "21365498712",
 });
 
-user.checkout(store, user.getShippedAddresses()[0]);
+user.checkout(store, user.getShippingAddresses()[0]);
 
 console.log("\n\n订单信息");
 console.log("-------------------------------------------");
