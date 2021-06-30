@@ -1,4 +1,3 @@
-import Cart from "./Cart.js";
 import TShirt from "./TShirt.js";
 import Jeans from "./Jeans.js";
 import { generateId } from "./utils.js";
