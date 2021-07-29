@@ -18,7 +18,7 @@ class Cart {
         ...item.item,
         count: item.count,
       })),
-      ["name", "price", "color", "size"]
+      ["name", "price", "color", "size", "count"]
     );
   }
 
