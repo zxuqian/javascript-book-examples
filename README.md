@@ -1,2 +1,2 @@
 # javascript-book-examples
- JavaScript 语法宝典示例代码
+ JavaScript 基础语法详解随书示例代码
