@@ -1,0 +1,17 @@
+{
+  "name": "02-tuple",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel index.js -o dist.js",
+    "start": "node dist.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-proposal-record-and-tuple": "^7.18.6",
+    "@babel/preset-env": "^7.16.11",
+    "@bloomberg/record-tuple-polyfill": "^0.0.4"
+  }
+}
